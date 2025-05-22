@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
+:root {
+  --black-color: #121212;
+  --white-color: #FAFAFA;
+}
+
+.dark-theme {
+  --black-color: #FAFAFA;
+  --white-color: #121212;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background: #0F172A;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--black-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+input,
+textarea,
+select,
+button,
+label {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1150px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 668px;
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 380px;
+    padding: 0 10px;
+  }
+}
+#scrollProgressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: #2979ff;
+  z-index: 1000;
+  width: 0;
+}
+
+#loader {
+  width: 80px;
+  height: 80px;
+  border: 5px solid transparent;
+  border-top: 5px solid #2979ff;
+  border-bottom: 5px solid #2979ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+#loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.hidden-content {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.hidden-content.show {
+  opacity: 1;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 34px 0;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+.header__logo:hover {
+  opacity: 0.7;
+}
+.header__logo:active {
+  transform: scale(0.9);
+}
+.header__logo__name {
+  background: linear-gradient(270deg, #22D3EE 50%, #0EA5E9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 30px;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header__links {
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+.header__links:hover {
+  opacity: 1;
+}
+.header__links:active {
+  opacity: 0.7;
+}/*# sourceMappingURL=main.css.map */
