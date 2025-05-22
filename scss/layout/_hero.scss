@@ -1,0 +1,114 @@
+.main {
+    margin-top: 112px;
+}
+
+.hero {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        width: 713px;
+    }
+
+    &__title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 48px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 26px;
+        color: #9CA3AF;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__twitter {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #1DA1F2 11%, rgba(29, 161, 242, 0.6) 89%);
+        transition: all 0.2s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
+    &__facebook {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #1778F2 11%, rgba(23, 120, 242, 0.62) 89%);
+        padding-top: 7px;
+        padding-right: 5px;
+        transition: all 0.2s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
+    &__linkedin {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: linear-gradient(180deg, rgba(10, 102, 194, 0.56) 11%, #0A66C2 89%);
+        transition: all 0.2s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
+    &__youtube {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding-top: 5px;
+        padding-right: 4px;
+        background: linear-gradient(180deg, rgba(255, 0, 0, 0.67) 11%, #FF0000 89%);
+        transition: all 0.2s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}

@@ -141,6 +141,7 @@ img {
   right: 0;
   z-index: 999;
   padding: 34px 0;
+  background-color: #0F172A;
 }
 .header__container {
   display: flex;
@@ -156,13 +157,9 @@ img {
   opacity: 0.7;
 }
 .header__logo:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 .header__logo__name {
-  background: linear-gradient(270deg, #22D3EE 50%, #0EA5E9 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-weight: 700;
   font-size: 30px;
 }
@@ -183,4 +180,108 @@ img {
 }
 .header__links:active {
   opacity: 0.7;
+}
+
+.gradient {
+  background: linear-gradient(270deg, #22D3EE 50%, #0EA5E9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.main {
+  margin-top: 112px;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__content {
+  width: 713px;
+}
+.hero__title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 48px;
+}
+.hero__text {
+  font-weight: 500;
+  font-size: 26px;
+  color: #9CA3AF;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.hero__socials {
+  display: flex;
+  gap: 32px;
+}
+.hero__twitter {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #1DA1F2 11%, rgba(29, 161, 242, 0.6) 89%);
+  transition: all 0.2s ease;
+}
+.hero__twitter:hover {
+  transform: scale(1.05);
+}
+.hero__twitter:active {
+  transform: scale(0.95);
+}
+.hero__facebook {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #1778F2 11%, rgba(23, 120, 242, 0.62) 89%);
+  padding-top: 7px;
+  padding-right: 5px;
+  transition: all 0.2s ease;
+}
+.hero__facebook:hover {
+  transform: scale(1.05);
+}
+.hero__facebook:active {
+  transform: scale(0.95);
+}
+.hero__linkedin {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(10, 102, 194, 0.56) 11%, #0A66C2 89%);
+  transition: all 0.2s ease;
+}
+.hero__linkedin:hover {
+  transform: scale(1.05);
+}
+.hero__linkedin:active {
+  transform: scale(0.95);
+}
+.hero__youtube {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding-top: 5px;
+  padding-right: 4px;
+  background: linear-gradient(180deg, rgba(255, 0, 0, 0.67) 11%, #FF0000 89%);
+  transition: all 0.2s ease;
+}
+.hero__youtube:hover {
+  transform: scale(1.05);
+}
+.hero__youtube:active {
+  transform: scale(0.95);
 }/*# sourceMappingURL=main.css.map */

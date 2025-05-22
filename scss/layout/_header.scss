@@ -5,6 +5,7 @@
     right: 0;
     z-index: 999;
     padding: 34px 0;
+    background-color: #0F172A;
 
     &__container {
         display: flex;
@@ -22,14 +23,10 @@
         }
 
         &:active {
-            transform: scale(0.9);
+            transform: scale(0.95);
         }
 
         &__name {
-            background: linear-gradient(270deg, #22D3EE 50%, #0EA5E9 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
             font-weight: 700;
             font-size: 30px;
         }
@@ -56,4 +53,11 @@
             opacity: 0.7;
         }
     }
+}
+
+.gradient {
+    background: linear-gradient(270deg, #22D3EE 50%, #0EA5E9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
