@@ -1,5 +1,6 @@
 .posts {
     width: 100%;
+    margin-top: 95px;
 }
 
 .posts__container {
@@ -16,11 +17,9 @@
 }
 
 .carousel-header h2 {
-    font-size: 24px;
-    background: linear-gradient(to right, #00c6ff, #0072ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    font-weight: 700;
+    font-size: 48px;
+    color: #F8FAFC;
 }
 
 .header-controls {
@@ -30,9 +29,9 @@
 }
 
 .carousel-header a {
-    color: #00c6ff;
-    text-decoration: none;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #F8FAFC;
 }
 
 .carousel {
@@ -69,18 +68,29 @@
     padding: 15px;
 }
 
+.card-content h2 {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #F8FAFC;
+}
+
 .card-content p {
     color: #f8fafc;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .card-content p:first-child {
     font-size: 14px;
-    margin-bottom: 5px;
+    padding-bottom: 9px;
 }
 
 .card-content p:last-child {
+    margin-top: 9px;
     font-size: 12px;
-    opacity: 0.8;
 }
 
 .nav-arrow {
