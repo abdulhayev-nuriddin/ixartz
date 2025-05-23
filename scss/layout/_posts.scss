@@ -4,8 +4,6 @@
 }
 
 .posts__container {
-    max-width: 1200px;
-    margin: 0 auto;
     position: relative;
 }
 
@@ -46,8 +44,6 @@
 
 .card {
     flex: 0 0 33.33%;
-    padding: 10px;
-    text-decoration: none;
     color: inherit;
 }
 
@@ -125,6 +121,15 @@
 }
 
 @media (max-width: 480px) {
+    .carousel-header h2 {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .header-controls a {
+        font-size: 18px;
+    }
+
     .card {
         flex: 0 0 100%;
     }

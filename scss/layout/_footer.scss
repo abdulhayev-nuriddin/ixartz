@@ -67,15 +67,71 @@
 
     &__copy {
         color: #f8fafc;
+        font-size: 18px;
     }
 
     &__socials {
         display: flex;
         align-items: center;
         gap: 15px;
+
+        a {
+            transition: all 0.2s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:active {
+                transform: scale(0.9);
+            }
+        }
     }
 }
 
 hr {
     background: #CBD5E1;
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        margin: 0;
+
+        &__container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 33px;
+            padding: 41px 0 57px 0;
+        }
+
+        &__content {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 24px;
+            width: auto;
+        }
+
+        &__text {
+            font-size: 13px;
+        }
+
+        &__inp {
+            padding: 23px 190px 23px 42px;
+            width: 100%;
+        }
+
+        &__bottom {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 9px;
+        }
+    }
 }
