@@ -36,9 +36,11 @@ p {
     color: var(--black-color);
 }
 
-a {
+a,
+button {
     text-decoration: none;
     color: var(--black-color);
+    cursor: pointer;
 }
 
 input,
