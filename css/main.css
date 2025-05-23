@@ -465,6 +465,9 @@ hr {
     width: 10px;
   }
 }
+.projects {
+  margin-top: 133px;
+}
 .projects__title {
   font-weight: 700;
   font-size: 48px;
